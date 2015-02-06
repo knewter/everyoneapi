@@ -28,7 +28,9 @@ defmodule Everyoneapi.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.6.0"},
-      {:poison,    "~> 1.3.1"}
+      {:poison,    "~> 1.3.1"},
+      {:ex_doc, "0.7.0", only: :docs},
+      {:markdown, github: "devinus/markdown", only: :docs}
     ]
   end
 
