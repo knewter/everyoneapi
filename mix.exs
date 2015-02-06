@@ -4,6 +4,8 @@ defmodule Everyoneapi.Mixfile do
   def project do
     [app: :everyoneapi,
      version: "0.0.1",
+     description: "API Client for EveryoneAPI.com.",
+     package: package,
      deps: deps]
   end
 
@@ -27,6 +29,14 @@ defmodule Everyoneapi.Mixfile do
     [
       {:httpoison, "~> 0.6.0"},
       {:poison,    "~> 1.3.1"}
+    ]
+  end
+
+  defp package do
+    [
+      contributors: ["Josh Adams"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "http://github.com/knewter/everyoneapi"}
     ]
   end
 end
