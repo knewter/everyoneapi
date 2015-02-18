@@ -4,6 +4,8 @@ defmodule Everyoneapi do
   Everyoneapi allows you to lookup a phone number and get back information such
   as Name, Address, Carrier, and more.
 
+  It's available [on GitHub at knewter/everyoneapi](http://github.com/knewter/everyoneapi).
+
   ### Configuration
 
   Add configuration into your config/config.exs file:
@@ -14,7 +16,7 @@ defmodule Everyoneapi do
 
   It's based on HTTPoison, so you must first start the API client:
 
-  iex> Everyoneapi.start
+      iex> Everyoneapi.start
 
   This must be done once, and it starts the dependencies necessary to use the
   API client.  Then, looking up someone's information is as simple as:
